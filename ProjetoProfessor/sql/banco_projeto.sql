@@ -1,7 +1,4 @@
-CREATE DATABASE projeto_professor;
-USE projeto_professor;
-
-CREATE TABLE usuarios (
+CREATE TABLE IF NOT EXISTS usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
@@ -11,14 +8,14 @@ CREATE TABLE usuarios (
 INSERT INTO usuarios (nome, email, senha)
 VALUES ('Administrador', 'admin@email.com', '3412');
 
-CREATE TABLE alunos (
+CREATE TABLE IF NOT EXISTS alunos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     numero_chamada INT NOT NULL UNIQUE,
     faltas INT DEFAULT 0
 );
 
-CREATE TABLE configuracoes (
+CREATE TABLE IF NOT EXISTS configuracoes (
     id INT PRIMARY KEY,
     limite_faltas INT NOT NULL
 );
@@ -26,7 +23,7 @@ CREATE TABLE configuracoes (
 INSERT INTO configuracoes (id, limite_faltas)
 VALUES (1, 5);
 
-CREATE TABLE controle_bimestre (
+CREATE TABLE IF NOT EXISTS controle_bimestre (
     id INT PRIMARY KEY,
     bimestre_atual INT NOT NULL,
     atualizado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
@@ -35,7 +32,7 @@ CREATE TABLE controle_bimestre (
 INSERT INTO controle_bimestre (id, bimestre_atual)
 VALUES (1, 1);
 
-CREATE TABLE historico_bimestres (
+CREATE TABLE IF NOT EXISTS historico_bimestres (
     id INT AUTO_INCREMENT PRIMARY KEY,
     aluno_id INT NOT NULL,
     bimestre INT NOT NULL,
