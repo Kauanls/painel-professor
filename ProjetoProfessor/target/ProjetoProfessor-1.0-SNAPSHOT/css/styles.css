@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Wrapper centralizado */
+.painel-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Título */
+.painel-wrapper h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Mensagens */
+.mensagem {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+.mensagem p {
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.mensagem p[style*="color:red"] {
+  color: #d9534f;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+.mensagem p[style*="color:green"] {
+  color: #28a745;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+/* Container das seções */
+.painel-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Blocos */
+.painel-box {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos das seções */
+.painel-box h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Inputs e botões */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 12px 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 14px;
+}
+
+th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr.alerta {
+  background-color: #ffe5e5;
+  font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .painel-wrapper {
+    padding: 20px;
+  }
+
+  .painel-box {
+    padding: 20px;
+  }
+
+  table, th, td {
+    font-size: 13px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,15 @@
+br\uninove\projetoprofessor\modelo\Professor.class
+br\uninove\projetoprofessor\servlet\CriarContaServlet.class
+br\uninove\projetoprofessor\dao\AlunoDAO.class
+br\uninove\projetoprofessor\servlet\RemoverAlunoServlet.class
+br\uninove\projetoprofessor\JakartaRestConfiguration.class
+br\uninove\projetoprofessor\servlet\LoginServlet.class
+br\uninove\projetoprofessor\servlet\ConfigurarLimiteServlet.class
+br\uninove\projetoprofessor\modelo\Aluno.class
+br\uninove\projetoprofessor\servlet\LogoutServlet.class
+br\uninove\projetoprofessor\resources\JakartaEE10Resource.class
+br\uninove\projetoprofessor\servlet\RegistrarFaltaServlet.class
+br\uninove\projetoprofessor\modelo\Configuracao.class
+br\uninove\projetoprofessor\servlet\ResetarAnoLetivoServlet.class
+br\uninove\projetoprofessor\servlet\AdicionarAlunoServlet.class
+br\uninove\projetoprofessor\servlet\ZerarFaltasServlet.class
