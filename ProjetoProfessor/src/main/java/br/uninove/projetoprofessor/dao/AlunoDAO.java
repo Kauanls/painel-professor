@@ -6,9 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AlunoDAO {
-    private final String URL = "jdbc:mysql://localhost:3306/projeto_professor?useSSL=false&allowPublicKeyRetrieval=true";
+    private final String URL = "jdbc:mysql://ballast.proxy.rlwy.net:26563/projeto_professor?useSSL=false&serverTimezone=UTC";
     private final String USER = "root";
-    private final String PASSWORD = "KLdb$*00157";
+    private final String PASSWORD = "MdgcMVkxtgWDXTdiZSGCXSGILkHShknv";
 
     private Connection conectar() throws SQLException {
         try {
@@ -308,3 +308,4 @@ public boolean criarUsuario(String email, String senha) {
 }
 
 }
+
