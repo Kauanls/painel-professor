@@ -1,6 +1,5 @@
 # Imagem base GlassFish com JDK 24
 FROM ghcr.io/eclipse-ee4j/glassfish:7.0.25-jdk24
-
 # Copia o WAR gerado pelo Maven para o diretório de autodeploy do GlassFish
 COPY target/ProjetoProfessor-1.0-SNAPSHOT.war /glassfish7/glassfish/domains/domain1/autodeploy/ROOT.war
 
