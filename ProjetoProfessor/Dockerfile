@@ -1,9 +1,9 @@
 FROM eclipse-temurin:21-jdk
 
-# Baixa o Payara Micro durante o build
-RUN curl -L -o /opt/payara-micro.jar https://repo.payara.fish/payara/micro/payara-micro-7.2025.1.jar
+# Copia o Payara Micro local
+COPY payara-micro-7.2025.1.jar /opt/payara-micro.jar
 
-# Copia o .war gerado pelo Maven para dentro do container
+# Copia o WAR gerado
 COPY target/ProjetoProfessor-1.0-SNAPSHOT.war /opt/app.war
 
 EXPOSE 8080
